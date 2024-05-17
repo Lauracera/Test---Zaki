@@ -1,0 +1,19 @@
+* {
+  font-family: "Sora", sans-serif;
+}
+
+.light-grey {
+  background-color: #f9f9f9;
+}
+
+.dark-grey {
+  color: #91989c;
+}
+
+.accent {
+  background-color: #cd2d45;
+}
+
+.img1 {
+  object-fit: cover;
+}
