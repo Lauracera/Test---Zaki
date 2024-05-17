@@ -95,7 +95,7 @@
       <!-- #APP -->
       <div id="app" class="container">
         <!-- HERO -->
-        <hero>
+        <div class="hero">
           <div></div>
           <div>
             <img
@@ -111,7 +111,7 @@
             <h1>Your best partner in everything</h1>
             <p>IntroText</p>
           </div>
-        </hero>
+        </div>
         <!-- SECTION 'COLOR ACCENT' -->
         <section>
           <div class="row accent rounded-5" style="width: 100%; height: 500px">
@@ -119,7 +119,6 @@
               <div class="card mb-4">
                 <img :src="item.image" class="card-img-top" :alt="item.title" />
                 <div class="card-body">
-                  <img src="{{item.image}}" />
                   <h5 class="card-title">{{ item.title }}</h5>
                   <p class="card-text">{{ item.description }}</p>
                 </div>
@@ -141,27 +140,25 @@
     </div>
 
     <script>
-      new Vue({
-        el: "#app",
-        data: {
-          items: [],
+      const app = Vue.createApp({
+        data() {
+          return {
+            items: [],
+          };
         },
         mounted() {
           axios
             .get("https://664793f72bb946cf2f9e3b07.mockapi.io/api/v1/cards")
             .then((response) => {
-              this.items = response.data.map((items) => ({
-                image: items.url,
-                title: items.title,
-                description: items.description,
-                id: items.id,
-              }));
+              this.items = response.data;
             })
             .catch((error) => {
               console.error("Error fetching data:", error);
             });
         },
       });
+
+      app.mount("#app");
     </script>
   </body>
 </html>
