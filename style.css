@@ -14,7 +14,17 @@
   object-fit: cover;
 }
 
+/* SECTION HERO */
+.btn-text {
+  font-weight: 200;
+  font-size: 0.8rem;
+}
+
 /* SECTION 'COLOR ACCENT' */
+.accent-div {
+  width: 100%;
+  height: 500px;
+}
 .accent {
   background-color: #cd2d45;
 }
