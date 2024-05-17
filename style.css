@@ -10,10 +10,19 @@
   color: #91989c;
 }
 
+.img1 {
+  object-fit: cover;
+}
+
+/* SECTION 'COLOR ACCENT' */
 .accent {
   background-color: #cd2d45;
 }
 
-.img1 {
-  object-fit: cover;
+.truncate {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
