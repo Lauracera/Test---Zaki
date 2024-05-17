@@ -95,7 +95,7 @@
       <!-- #APP -->
       <div id="app" class="container">
         <!-- HERO -->
-        <div class="hero">
+        <div class="hero mb-3">
           <div></div>
           <div>
             <img
@@ -109,13 +109,27 @@
           <div class="text-center">
             <h5>Vision</h5>
             <h1>Your best partner in everything</h1>
-            <p>IntroText</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              finibus ornare velit, vitae dapibus sem malesuada nec. Sed vitae
+              fermentum magna, at faucibus tortor. Vivamus tincidunt nisl vitae
+              diam commodo, et varius diam posuere. Sed eget dapibus odio, at
+              vestibulum orci. Sed hendrerit lacus pulvinar, sodales arcu sit
+              amet, aliquet massa.
+            </p>
+            <button class="border-0 rounded-5 accent text-white">
+              Discover more
+            </button>
           </div>
         </div>
         <!-- SECTION 'COLOR ACCENT' -->
         <section>
-          <div class="row accent rounded-5">
-            <div class="col-md-3" v-for="item in limitedItems" :key="item.id">
+          <div class="row accent rounded-5" width="100%">
+            <div
+              class="col-md-3 d-flex"
+              v-for="item in limitedItems"
+              :key="item.id"
+            >
               <div class="card mb-4">
                 <img :src="item.image" class="card-img-top" :alt="item.title" />
                 <div class="card-body">
