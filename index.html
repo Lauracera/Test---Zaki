@@ -25,7 +25,7 @@
       <!-- NAVBAR -->
       <nav class="navbar navbar-expand-lg p-2">
         <div class="container-fluid bg-white rounded-5 d-flex">
-          <a class="navbar-brand dark-grey" href="#">logo</a>
+          <a class="navbar-brand" href="#">logo</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -109,7 +109,6 @@
           <div class="text-center">
             <h5 class="mt-4">Vision</h5>
             <h1 class="mb-3">Your best partner in everything</h1>
-
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
               finibus ornare velit,<br />
@@ -117,7 +116,6 @@
               faucibus tortor.<br />
               Vivamus tincidunt nisl vitae diam commodo.
             </p>
-
             <button
               class="border-0 rounded-5 accent text-white mt-2 px-3 py-2 btn-text"
             >
@@ -150,13 +148,101 @@
           </div>
         </section>
         <!-- SECTION 'IMG LEFT' -->
-        <section></section>
+        <section>
+          <div class="row my-5">
+            <div class="col-md-6">
+              <img
+                src="https://blog.geografia.deascuola.it/uploads/2021/06/paesaggio-urbano-citta-Torino.jpeg"
+                class="img-fluid rounded-5"
+                alt="City Image"
+              />
+            </div>
+            <div class="col-md-6 d-flex flex-column justify-content-center">
+              <div class="text-center">
+                <h5 class="mt-4">Mission</h5>
+                <h2 class="mb-3">Making the web smarter</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  finibus ornare velit,<br />
+                  vitae dapibus sem malesuada nec. Sed vitae fermentum magna, at
+                  faucibus tortor.<br />
+                  Vivamus tincidunt nisl vitae diam commodo.
+                </p>
+                <a class="border-0 text-dark mt-2 px-3 py-2"
+                  >> Delve into it
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
         <!-- SECTION 'IMG RIGHT' -->
-        <section></section>
+        <section>
+          <div class="row my-5">
+            <div class="col-md-6 d-flex flex-column justify-content-center">
+              <div class="text-center">
+                <h5 class="mt-4">Mission</h5>
+                <h2 class="mb-3">Putting humans back in control</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  finibus ornare velit,<br />
+                  vitae dapibus sem malesuada nec. Sed vitae fermentum magna, at
+                  faucibus tortor.<br />
+                  Vivamus tincidunt nisl vitae diam commodo.
+                </p>
+                <a class="border-0 text-dark mt-2 px-3 py-2"
+                  >> Delve into it
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <img
+                src="https://blog.geografia.deascuola.it/uploads/2021/06/paesaggio-urbano-citta-Torino.jpeg"
+                class="img-fluid rounded-5"
+                alt="City Image"
+              />
+            </div>
+          </div>
+        </section>
         <!-- SECTION 'ONLY BUTTON' -->
-        <section></section>
+        <section class="text-center my-5">
+          <h2 class="mb-4">Interested yet?</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed finibus
+            ornare velit,<br />
+            vitae dapibus sem malesuada nec. Sed vitae fermentum magna, at
+            faucibus tortor.<br />
+            Vivamus tincidunt nisl vitae diam commodo.
+          </p>
+          <button
+            class="border-0 rounded-5 accent text-white mt-2 px-3 py-2 btn-text"
+          >
+            Discover more
+          </button>
+        </section>
         <!-- SECTION 'COLOR DARK-GREY' -->
-        <section></section>
+        <section>
+          <div class="row dark-grey rounded-5 accent-div mt-5">
+            <div
+              class="text-white d-flex justify-content-between align-items-center"
+            >
+              <h2>Our solutions</h2>
+              <a>See all ></a>
+            </div>
+            <div
+              class="col-md-3 d-flex"
+              v-for="item in limitedItems"
+              :key="item.id"
+            >
+              <div class="card mb-4">
+                <img :src="item.image" class="card-img-top" :alt="item.title" />
+                <div class="card-body">
+                  <h5 class="card-title">{{ item.title }}</h5>
+                  <p class="card-text truncate">{{ item.description }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <!-- FOOTER -->
         <footer></footer>
       </div>

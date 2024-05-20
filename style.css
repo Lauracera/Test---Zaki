@@ -6,10 +6,6 @@
   background-color: #f9f9f9;
 }
 
-.dark-grey {
-  color: #91989c;
-}
-
 .img1 {
   object-fit: cover;
 }
@@ -35,4 +31,9 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+/*SECTION DARK-GREY*/
+.dark-grey {
+  background-color: #5e6671;
 }
