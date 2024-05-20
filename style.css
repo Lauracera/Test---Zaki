@@ -42,15 +42,17 @@ a {
 }
 
 .card-img-top {
-  margin: 10px !important;
-  border-radius: 15px !important;
+  margin: 13px !important;
+  border-radius: 12px !important;
   display: block !important;
-  width: 265px !important;
+  width: 260px !important;
 }
 
 .card {
   max-width: 18rem;
+  max-height: 23rem;
   margin: 0 auto;
+  border-radius: 28px !important;
 }
 
 /*SECTION DARK-GREY*/
