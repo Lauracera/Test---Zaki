@@ -33,6 +33,17 @@
   text-overflow: ellipsis;
 }
 
+.card-img-top {
+  margin: 10px auto;
+  border-radius: 15px;
+  display: block;
+}
+
+.card {
+  max-width: 18rem;
+  margin: 0 auto;
+}
+
 /*SECTION DARK-GREY*/
 .dark-grey {
   background-color: #5e6671;
