@@ -60,7 +60,12 @@ li {
   margin: 13px !important;
   border-radius: 12px !important;
   display: block !important;
-  width: 260px !important;
+  max-width: 260px !important;
+}
+
+.marginOnlyBtn {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .card {
