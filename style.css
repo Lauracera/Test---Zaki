@@ -2,6 +2,10 @@
   font-family: "Sora", sans-serif;
 }
 
+section {
+  margin-top: 90px !important;
+}
+
 .light-grey {
   background-color: #f6f6f6;
 }
@@ -21,6 +25,13 @@ a {
 
 li {
   font-size: 15px;
+}
+
+.fontFooter {
+  font-size: 12px;
+  text-decoration: none;
+  color: black;
+  margin: 7px;
 }
 /* SECTION HERO */
 .btn-text {
